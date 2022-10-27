@@ -37,6 +37,7 @@ a{
 	height: 31px;
 }
 .m_header nav ul li a{
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 15px;
