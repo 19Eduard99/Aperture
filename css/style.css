@@ -10,6 +10,9 @@
 }
 header{
 	background: #181818;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
 }
 a{
 	display: inline-block;
