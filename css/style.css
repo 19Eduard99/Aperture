@@ -258,7 +258,7 @@ a{
 /*section japan*/
 .japan{
 	min-height: 600px;
-    background-image: url(../img/japan.jpg);
+    background-image: url(../img/jpan.jpg);
     background-size: cover;
     display: flex;
     justify-content: end;
