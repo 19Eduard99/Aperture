@@ -424,6 +424,68 @@ a{
 }
 /*section Costa_Rica*/
 
+/*section past_clients*/
+.past_clients{
+	background: #000000;
+	padding: 120px 0 100px;
+}
+.past_clients h2{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 42px;
+	margin-bottom: 15px;
+	text-align: center;
+	color: #FFFFFF;	
+}
+.past_clients h4{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	color: #C0C0C0;	
+	padding-bottom: 82px;
+}
+.clien_art{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1168px;
+    margin: auto;
+}
+.clien_art article{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.owl-carousel .owl-dots button.owl-dot {
+	margin-top: 30px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+     background-color: white;
+}
+.owl-carousel .owl-dots button.owl-dot.active{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+.owl-dots{
+	margin-right: ;
+    display: flex;
+    justify-content: center;
+}
+.owl-carousel .owl-dots button.owl-dot {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+/*section past_clients*/
+
 /*section Nepal*/
 .Nepal{
 	min-height: 600px;
