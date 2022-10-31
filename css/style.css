@@ -567,3 +567,8 @@ a{
     top: 7px;
 }
 /*section Nepal*/
+
+.owl-stage{
+	display: flex;
+	align-items: center;
+}
