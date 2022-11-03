@@ -5,16 +5,43 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aperture</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/owl.theme.default.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Aperture</title>
 </head>
 <body>
-	<header>
+	<header class="cd-header">
+		<div class="m_header">
+			<a href="#" class="logo logo-wrap"></a>
+			<div class="nav-but-wrap">
+				<div class="menu-icon hover-target">
+					<span class="menu-icon__line menu-icon__line-left"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line menu-icon__line-right"></span>
+				</div>					
+			</div>					
+			<div class="nav">
+				<div class="nav__content">
+					<ul class="nav__list">
+						<li class="nav__list-item active-nav"><a href="#" class="hover-target">Business areas</a></li>
+						<li class="nav__list-item"><a href="#" class="hover-target">Featured images</a></li>
+						<li class="nav__list-item"><a href="#" class="hover-target">Gear cage</a></li>
+						<li class="nav__list-item"><a href="#" class="hover-target">Contact</a></li>
+						<li class="nav__list-item"><a href="#" class="hover-target">Get template</a></li>
+					</ul>
+				</div>
+		</div>	
+		</div>				
+	</header>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
+	<!-- <header>
 		<div class="m_header">
 			<a class="logo" href="#"></a>
 			<nav>
@@ -37,7 +64,7 @@
 				</ul>
 			</nav>
 		</div>
-	</header>
+	</header> -->
 	<section class="aperture_studios">
 			<div class="aperture_container">
 					<h3>Photographer & Filmmaker</h3>	
@@ -55,7 +82,47 @@
 		<div class="cent_con">
 			<h2>What we do.</h2>
 			<h3>The areas that we're specialized in.</h3>
-			<div class="doc d-flex">
+			<div id="accordion" >
+			  <h3>Section 1</h3>
+			  <div class="doc d-flex">
+				<article>
+					<img src="img/Product.jpg" alt="Product">
+					<div class="describe">
+						<h4>Product Photography</h4>
+						<p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+						<a href="#">Read more</a>
+					</div>
+				</article>
+				<article>
+					<img src="img/Architecture.jpg" alt="Architecture">
+					<div class="describe">
+						<h4>Architecture Photography</h4>
+						<p>Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+						<a href="#">Read more</a>
+					</div>
+				</article>
+			  </div>
+			  <h3>Section 2</h3>
+			  <div class="doc d-flex">
+				<article>
+					<img src="img/Drone.jpg" alt="Drone">
+					<div class="describe">
+						<h4>Drone Photography</h4>
+						<p>Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+						<a href="#">Read more</a>
+					</div>
+				</article>
+				<article>
+					<img src="img/Wildlife.jpg" alt="Wildlife">
+					<div class="describe">
+						<h4>Wildlife Photography</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+						<a href="#">Read more</a>
+					</div>
+				</article>
+			  </div>
+			</div>
+			<!-- <div class="doc d-flex">
 				<article>
 					<img src="img/Product.jpg" alt="Product">
 					<div class="describe">
@@ -88,7 +155,7 @@
 						<a href="#">Read more</a>
 					</div>
 				</article>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<section class="japan">
@@ -209,8 +276,11 @@
 				<li><a href="#">Nepal</a></li>
 			</ul>
 	</section>
+	
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-	<script src="js/owl.carousel.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="js/owl.carousel.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
