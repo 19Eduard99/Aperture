@@ -1,0 +1,677 @@
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
+@import "navigation.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  display: inline-block;
+}
+
+/*header*/
+header {
+  background: #181818;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.m_header {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 20px 24px 32px;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .m_header {
+    padding: 24px 22px 24px 22px;
+  }
+}
+
+.m_header .nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .m_header .nav ul {
+    display: inline-block;
+  }
+}
+.m_header .nav ul li {
+  margin-left: 32px;
+}
+@media screen and (max-width: 874px) {
+  .m_header .nav ul li {
+    margin-left: 22px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .m_header .nav ul li {
+    margin-left: 0;
+  }
+}
+.m_header .nav ul li:nth-child(1) a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  margin-right: 56px;
+  margin-left: 0px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 874px) {
+  .m_header .nav ul li:nth-child(1) a {
+    margin-right: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .m_header .nav ul li:nth-child(1) a {
+    margin-right: 0;
+    line-height: 55px;
+    font-size: 40px;
+  }
+}
+.m_header .nav ul li:nth-child(2) {
+  margin-left: 0;
+}
+.m_header .nav ul li:last-child a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  padding: 9px 20px 13px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+}
+@media screen and (max-width: 874px) {
+  .m_header .nav ul li:last-child a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .m_header .nav ul li:last-child a {
+    margin-right: 0;
+    line-height: 55px;
+    font-size: 40px;
+  }
+}
+.m_header .nav ul li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+@media screen and (max-width: 874px) {
+  .m_header .nav ul li a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .m_header .nav ul li a {
+    margin-right: 0;
+    line-height: 55px;
+    font-size: 40px;
+  }
+}
+
+.m_header .logo:before {
+  content: url("../img/aperture.svg");
+  display: inline-block;
+  width: 128px;
+  height: 31px;
+}
+
+/*header*/
+/*section aperture_studios*/
+.aperture_studios {
+  background-image: url("../img/fon1.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+.aperture_studios ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 45px;
+  right: 24px;
+}
+.aperture_studios ul li {
+  margin-right: 16px;
+}
+.aperture_studios ul li:first-child:before {
+  content: url("../img/12000s.svg");
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 7px;
+}
+.aperture_studios ul li:nth-child(2):before {
+  content: url("../img/f11.svg");
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 7px;
+}
+.aperture_studios ul li:nth-child(3):before {
+  content: url("../img/100.svg");
+  display: inline-block;
+  margin-right: 7px;
+  position: relative;
+  top: 7px;
+}
+.aperture_studios ul li:last-child:before {
+  content: url("../img/Iceland.svg");
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
+}
+.aperture_studios a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.aperture_container {
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+.aperture_container h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C0C0C0;
+}
+.aperture_container h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 59px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+.aperture_container p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #C0C0C0;
+}
+
+/*section aperture_studios*/
+/*section content*/
+.content {
+  background: #000000;
+  padding: 113px 0 84px;
+}
+.content .cent_con h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.content .cent_con h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+  color: #C0C0C0;
+  margin-bottom: 42px;
+}
+.content .cent_con article {
+  max-width: 576px;
+  position: relative;
+}
+.content .cent_con article .describe {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+  bottom: 0;
+}
+.content .cent_con article .describe h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.content .cent_con article .describe p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 17px;
+  color: #C0C0C0;
+}
+.content .cent_con article .describe a {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  padding-right: 10px;
+  color: #000000;
+  background: #FFFFFF;
+  border-radius: 14px;
+  text-decoration: none;
+}
+.content .cent_con article .describe a:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: block;
+  background-color: #000000;
+  border-radius: 50%;
+  margin: 5px 6px 5px 4px;
+}
+
+.doc {
+  max-width: 1168px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+/*section content*/
+/*accordion*/
+.ui-accordion .ui-accordion-content {
+  padding: 0;
+}
+
+.ui-widget-content {
+  background: none;
+  border: none;
+}
+
+.ui-widget-content {
+  background-color: black;
+  border: none;
+}
+
+.ui-accordion .ui-accordion-content {
+  display: flex;
+  max-width: 1184px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 0;
+}
+.ui-accordion .ui-accordion-header {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+.ui-accordion .ui-accordion-header .ui-state-hover .ui-icon {
+  background-image: none;
+}
+
+/*accordion*/
+/*section japan*/
+.japan {
+  min-height: 600px;
+  background-image: url(../img/jpan.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 62px;
+  position: relative;
+}
+.japan .description {
+  max-width: 298px;
+}
+.japan .description h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.japan .description p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0C0C0;
+}
+.japan ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 45px;
+  right: 24px;
+}
+.japan ul li {
+  margin-right: 16px;
+}
+.japan ul li:first-child:before {
+  content: url("../img/12000s.svg");
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 7px;
+}
+.japan ul li:nth-child(2):before {
+  content: url("../img/f11.svg");
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 7px;
+}
+.japan ul li:nth-child(3):before {
+  content: url("../img/100.svg");
+  display: inline-block;
+  margin-right: 7px;
+  position: relative;
+  top: 7px;
+}
+.japan ul li:last-child:before {
+  content: url("../img/Iceland.svg");
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
+}
+.japan ul li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*section japan*/
+/*section Costa_Rica*/
+.Costa_Rica {
+  min-height: 600px;
+  background-image: url(../img/CostaRica.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 87px;
+  position: relative;
+}
+.Costa_Rica .description2 {
+  max-width: 273px;
+}
+.Costa_Rica .description2 h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.Costa_Rica .description2 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0C0C0;
+}
+.Costa_Rica ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 45px;
+  right: 24px;
+}
+.Costa_Rica ul li {
+  margin-right: 16px;
+}
+.Costa_Rica ul li:first-child:before {
+  content: url("../img/12000s.svg");
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 7px;
+}
+.Costa_Rica ul li:nth-child(2):before {
+  content: url("../img/f11.svg");
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 7px;
+}
+.Costa_Rica ul li:nth-child(3):before {
+  content: url("../img/100.svg");
+  display: inline-block;
+  margin-right: 7px;
+  position: relative;
+  top: 7px;
+}
+.Costa_Rica ul li:last-child:before {
+  content: url("../img/Iceland.svg");
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
+}
+.Costa_Rica ul li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*section Costa_Rica*/
+/*section past_clients*/
+.past_clients {
+  background: #000000;
+  padding: 120px 0 100px;
+}
+.past_clients h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 42px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.past_clients h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #C0C0C0;
+  padding-bottom: 82px;
+}
+
+.clien_art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1168px;
+  margin: auto;
+}
+.clien_art a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-dots {
+  display: flex;
+  justify-content: center;
+}
+.owl-carousel .owl-dots button.owl-dot {
+  margin-top: 30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.owl-carousel .owl-dots button.owl-dot.active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+.owl-carousel .owl-item img {
+  max-width: 128px;
+}
+
+.owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+/*section past_clients*/
+/*section Nepal*/
+.Nepal {
+  min-height: 600px;
+  background-image: url(../img/Nepal.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 106px;
+  position: relative;
+}
+.Nepal .description3 {
+  max-width: 254px;
+}
+.Nepal .description3 h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.Nepal .description3 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0C0C0;
+}
+.Nepal ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 45px;
+  right: 24px;
+}
+.Nepal ul li {
+  margin-right: 16px;
+}
+.Nepal ul li:first-child:before {
+  content: url("../img/12000s.svg");
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 7px;
+}
+.Nepal ul li:nth-child(2):before {
+  content: url("../img/f11.svg");
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 7px;
+}
+.Nepal ul li:nth-child(3):before {
+  content: url("../img/100.svg");
+  display: inline-block;
+  margin-right: 7px;
+  position: relative;
+  top: 7px;
+}
+.Nepal ul li:last-child:before {
+  content: url("../img/Iceland.svg");
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
+}
+.Nepal ul li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*section Nepal*/
+
+/*# sourceMappingURL=style_preproc.css.map */
