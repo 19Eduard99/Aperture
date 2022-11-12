@@ -1,0 +1,696 @@
+$main_font:'Poppins';
+$white:#FFFFFF;
+$main_color:#181818;
+
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
+@import "navigation.css";
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+a{
+  display: inline-block;
+}
+/*header*/
+
+header{
+  background: $main_color;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+
+}
+.m_header{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 20px 24px 32px;
+  align-items: center;
+  @include max-screen(800px){
+    padding: 24px 22px 24px 22px;
+  }
+}
+.m_header{
+  .nav{
+    ul{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      @include max-screen(767px){
+        display: inline-block;
+      }
+      li{
+        margin-left: 32px;
+        @include max-screen(874px){
+          margin-left: 22px;
+        }
+        @include max-screen(800px){
+          margin-left: 0;
+        }
+        &:nth-child(1) a{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 20px;
+          margin-right: 56px;
+          margin-left: 0px;
+          color: #FFFFFF;
+          @include max-screen(874px){
+            margin-right: 22px;
+          }
+          @include max-screen(767px){
+            margin-right: 0;
+            line-height: 55px;
+            font-size: 40px;
+          }
+        }
+        &:nth-child(2){
+          margin-left: 0;
+        }
+        &:last-child a{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.4px;
+          padding: 9px 20px 13px;
+          color: #000000;
+          background-color: #FFFFFF;
+          border-radius: 14px;
+          @include max-screen(874px){
+            font-size: 13px;
+          }
+          @include max-screen(767px){
+            margin-right: 0;
+            line-height: 55px;
+            font-size: 40px;
+          }
+        }
+        a{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          color: #FFFFFF;
+          text-decoration: none;
+          @include max-screen(874px){
+            font-size: 13px;
+          }
+          @include max-screen(767px){
+            margin-right: 0;
+            line-height: 55px;
+            font-size: 40px;
+
+          }
+        }
+      }
+    }
+  }
+}
+.m_header{
+  .logo{
+    &:before{
+      content: url("../img/aperture.svg");
+      display: inline-block;
+      width: 128px;
+      height: 31px;
+    }
+  }
+}
+/*header*/
+
+
+/*section aperture_studios*/
+.aperture_studios{
+
+}
+.aperture_studios{
+  background-image: url("../img/fon1.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 45px;
+    right: 24px;
+    li{
+      margin-right: 16px;
+      &:first-child:before{
+        content: url("../img/12000s.svg");
+        display: inline-block;
+        margin-right: 6px;
+        position: relative;
+        top: 7px;
+      }
+      &:nth-child(2):before{
+        content: url("../img/f11.svg");
+        display: inline-block;
+        margin-right: 6px;
+        position: relative;
+        top: 7px;
+      }
+      &:nth-child(3):before{
+        content: url("../img/100.svg");
+        display: inline-block;
+        margin-right: 7px;
+            position: relative;
+        top: 7px;
+      }
+      &:last-child:before{
+        content: url("../img/Iceland.svg");
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        top: 7px;
+      }
+    }
+  }
+      a{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+}
+
+
+.aperture_container{
+  max-width: 600px;
+  margin-bottom: 60px;
+  h3{
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+  }
+  h2{
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 59px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+  }
+  p{
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #C0C0C0;
+  }
+}
+/*section aperture_studios*/
+
+/*section content*/
+
+.content{
+  background: #000000;
+  padding: 113px 0 84px;
+  .cent_con{
+    h2{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 42px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 15px;
+    }
+    h3{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 30px;
+      text-align: center;
+      color: #C0C0C0;
+      margin-bottom: 42px;
+    }
+    article{
+      max-width: 576px;
+      position: relative;
+      .describe{
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+        bottom: 0;
+        h4{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+        }
+        p{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 17px;
+          color: #C0C0C0;
+        }
+        a{
+          display: flex;
+          align-items: center;
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          letter-spacing: 0.4px;
+          padding-right: 10px;
+          color: #000000;
+          background: #FFFFFF;
+          border-radius: 14px;
+          text-decoration: none;
+          &:before{
+            content: '';
+            width: 32px;
+            height: 32px;
+            display: block;
+            background-color: #000000;
+            border-radius: 50%;
+            margin: 5px 6px 5px 4px;
+          }
+        }
+      }
+    }
+  }
+}
+.doc{
+  max-width: 1168px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+/*section content*/
+
+/*accordion*/
+
+.ui-accordion{
+  .ui-accordion-content{
+    padding: 0;
+  }
+}
+.ui-widget-content{
+  background: none;
+  border: none;
+}
+
+.ui-widget-content{
+  background-color: black;
+  border: none;
+}
+
+.ui-accordion{
+  .ui-accordion-content{
+    display: flex;
+    max-width: 1184px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .ui-accordion-header{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    .ui-state-hover{
+      .ui-icon{
+        background-image: none;
+      }
+    }
+  }
+}
+
+
+/*accordion*/
+
+/*section japan*/
+
+.japan{
+  min-height: 600px;
+  background-image: url(../img/jpan.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 62px;
+  position: relative;
+  .description{
+    max-width: 298px;
+    h5{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    p{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #C0C0C0;
+    }
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 45px;
+    right: 24px;
+    li{
+      margin-right: 16px;
+      &:first-child:before{
+        content: url("../img/12000s.svg");
+        display: inline-block;
+        margin-right: 6px;
+        position: relative;
+        top: 7px;
+      }
+      &:nth-child(2):before{
+        content: url("../img/f11.svg");
+        display: inline-block;
+        margin-right: 6px;
+        position: relative;
+        top: 7px;
+      }
+      &:nth-child(3):before{
+        content: url("../img/100.svg");
+        display: inline-block;
+        margin-right: 7px;
+        position: relative;
+        top: 7px;
+      }
+      &:last-child:before{
+        content: url("../img/Iceland.svg");
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        top: 7px;
+      }
+      a{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/*section japan*/
+
+/*section Costa_Rica*/
+
+.Costa_Rica{
+  min-height: 600px;
+  background-image: url(../img/CostaRica.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 87px;
+  position: relative;
+  .description2{
+    max-width: 273px;
+    h5{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    p{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #C0C0C0;
+    }
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 45px;
+    right: 24px;
+    li{
+      margin-right: 16px;
+      &:first-child:before{
+        content: url("../img/12000s.svg");
+        display: inline-block;
+        margin-right: 6px;
+        position: relative;
+        top: 7px;
+      }
+      &:nth-child(2):before{
+        content: url("../img/f11.svg");
+        display: inline-block;
+        margin-right: 6px;
+        position: relative;
+        top: 7px;
+      }
+      &:nth-child(3):before{
+        content: url("../img/100.svg");
+        display: inline-block;
+        margin-right: 7px;
+        position: relative;
+        top: 7px;
+      }
+      &:last-child:before{
+        content: url("../img/Iceland.svg");
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        top: 7px;
+      }
+      a{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+   }
+  }
+}
+
+/*section Costa_Rica*/
+
+/*section past_clients*/
+
+.past_clients{
+  background: #000000;
+  padding: 120px 0 100px;
+  h2{
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  h4{
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+    padding-bottom: 82px;
+  }
+}
+
+.clien_art{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1168px;
+  margin: auto;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.owl-carousel{
+  .owl-dots{
+    display: flex;
+    justify-content: center;
+    button.owl-dot{
+        margin-top: 30px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 30px;
+        margin-left: 30px;
+        &.active{
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: red;
+        }
+      }
+    }
+  .owl-item{
+    img{
+      max-width: 128px;
+    }
+  }
+}
+
+.owl-stage{
+  display: flex;
+  align-items: center;
+}
+/*section past_clients*/
+
+/*section Nepal*/
+
+.Nepal{
+  min-height: 600px;
+  background-image: url(../img/Nepal.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 106px;
+  position: relative;
+  .description3{
+    max-width: 254px;
+    h5{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    p{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #C0C0C0;
+    }
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 45px;
+    right: 24px;
+    li{
+      margin-right: 16px;
+      &:first-child:before{
+        content: url("../img/12000s.svg");
+        display: inline-block;
+        margin-right: 6px;
+        position: relative;
+        top: 7px;
+      }
+      &:nth-child(2):before{
+        content: url("../img/f11.svg");
+        display: inline-block;
+        margin-right: 6px;
+        position: relative;
+        top: 7px;
+      }
+      &:nth-child(3):before{
+        content: url("../img/100.svg");
+        display: inline-block;
+        margin-right: 7px;
+        position: relative;
+        top: 7px;
+      }
+      &:last-child:before{
+        content: url("../img/Iceland.svg");
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        top: 7px;
+      }
+      a{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/*section Nepal*/
